@@ -1,0 +1,23 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+$global-radius: 4px !default;
+$global-transition: all 0.5s ease-in-out !default;
+
+/* Fonts
+   ========================================================================== */
+
+$font-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Nunito Sans",
+  "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif !default;
+
+/* Colors
+   ========================================================================== */
+
+$primary-color: #87f;
+$primary-color-dark: #65d;
+$default-blue: #345;
+$white: #fff;
+$black: #000;

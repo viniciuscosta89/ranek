@@ -1,0 +1,6 @@
+.o-nav {
+  box-shadow: 0 2px 4px rgba(30, 60, 90, 0.1);
+  @include flex(space-between, center);
+  margin-bottom: 2.5rem;
+  padding: 15px 20px;
+}

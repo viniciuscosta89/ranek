@@ -1,0 +1,11 @@
+.o-heading {
+  color: $primary-color;
+
+  &--big {
+    font-size: 2rem;
+  }
+
+  &--center {
+    text-align: center;
+  }
+}

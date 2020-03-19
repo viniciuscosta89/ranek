@@ -1,0 +1,31 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ * This is an example component. Extend inuitcss by building your own components
+ * that make up your UI. Component classes are prefixed with a `c-`.
+ */
+
+.c-btn {
+  border: none;
+  border-radius: $global-radius;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-sans-serif;
+  font-size: 1rem;
+  padding: 10px 30px;
+  text-align: center;
+  transition: $global-transition;
+
+  &--primary {
+    background-color: $primary-color;
+    box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
+    color: $white;
+
+    &:hover {
+      background-color: $primary-color-dark;
+      transform: scale(1.1);
+    }
+  }
+}
