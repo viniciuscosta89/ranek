@@ -58,6 +58,7 @@ export default {
     if (this.login) {
       this.getUserProducts();
     }
+    document.title = 'Usuário | Ranek';
   },
 
 };

@@ -36,7 +36,9 @@ export default {
       this.$router.push({ name: 'login' });
     },
   },
-
+  created() {
+    document.title = 'Usuário | Ranek';
+  },
 };
 </script>
 
