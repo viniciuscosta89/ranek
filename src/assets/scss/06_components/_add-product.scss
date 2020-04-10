@@ -1,0 +1,10 @@
+.add-product {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  align-items: center;
+  margin-bottom: 60px;
+
+  > .c-btn {
+    grid-column: 2;
+  }
+}

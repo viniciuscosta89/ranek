@@ -1,0 +1,50 @@
+.c-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+  margin: 1rem;
+
+  @media screen and (min-width: 501px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin: 2rem;
+  }
+
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &--no-results {
+    text-align: center;
+  }
+
+  &__item {
+    box-shadow: 0 4px 8px rgba(30, 60, 90, 0.1);
+    padding: 10px;
+    background-color: $white;
+    border-radius: $global-radius;
+    position: relative;
+    transition: $global-transition;
+    z-index: 1;
+
+    &:hover {
+      box-shadow: 0 6px 12px rgba(30, 60, 90, 0.2);
+      transform: scale(1.1);
+    }
+
+    &__img {
+      border-radius: $global-radius;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__price {
+      color: $default-orange;
+      font-weight: bold;
+    }
+  }
+}

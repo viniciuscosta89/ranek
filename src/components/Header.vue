@@ -4,8 +4,11 @@
       <router-link to="/" exact class="o-logo">
         <img class="o-logo__img" src="@/assets/img/ranek.svg" alt="Ranek" />
       </router-link>
+      <router-link v-if="$store.state.login" to="/usuario" class="c-btn c-btn--primary">
+        {{ nome }}
+      </router-link>
 
-      <router-link to="/login" class="c-btn c-btn--primary">
+      <router-link v-else to="/login" class="c-btn c-btn--primary">
         Vender / Login
       </router-link>
     </nav>
@@ -15,6 +18,11 @@
 <script>
 export default {
   name: 'Header',
+  computed: {
+    nome() {
+      return this.$store.state.user.nome.replace(/ .*/, '');
+    },
+  },
 };
 </script>
 

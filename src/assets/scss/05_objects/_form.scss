@@ -1,0 +1,93 @@
+.o-form {
+  max-width: 600px;
+  margin: 0 auto 60px auto;
+  padding: 0 1rem;
+  position: relative;
+  $root: &;
+
+  &--default {
+    #{$root}__label {
+      margin: 0 0.5rem 0.5rem 0;
+    }
+
+    #{$root}__input {
+      margin-bottom: 15px;
+    }
+  }
+
+  &--grid {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+  }
+
+  &__label {
+    display: inline-block;
+  }
+
+  &__input {
+    border: 1px solid $white;
+    border-radius: $global-radius;
+    box-shadow: $global-shadow;
+    font-family: $font-sans-serif;
+    font-size: 1rem;
+    padding: 15px;
+    transition: $global-transition;
+
+    &:hover {
+      border-color: $primary-color;
+      box-shadow: $global-shadow-hover;
+    }
+
+    &:focus {
+      box-shadow: $global-shadow-hover;
+      outline-color: $primary-color;
+    }
+
+    &--block {
+      display: block;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+
+    &--search {
+      border: none;
+      padding: 20px;
+      width: 100%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:focus {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__magnify {
+    border: none;
+    cursor: pointer;
+    width: 62px;
+    height: 62px;
+    background: url("~@/assets/img/search.svg") center no-repeat;
+    text-indent: -150px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  > .button {
+    grid-column: 2;
+    margin-top: 1rem;
+  }
+
+  &__user {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    align-items: center;
+    grid-gap: 1rem;
+    grid-column: 1 / 3;
+  }
+}

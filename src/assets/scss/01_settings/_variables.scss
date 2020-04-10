@@ -5,13 +5,15 @@
 // need to be made available to the entire codebase.
 
 $global-radius: 4px !default;
-$global-transition: all 0.5s ease-in-out !default;
+$global-transition: all 0.3s ease-in-out !default;
+$global-shadow: 0 4px 8px rgba(30, 60, 90, 0.1);
+$global-shadow-hover: 0 6px 12px rgba(30, 60, 90, 0.2);
 
 /* Fonts
    ========================================================================== */
 
-$font-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Nunito Sans",
-  "Segoe UI", "Roboto", "Helvetica Neue", "Arial", sans-serif !default;
+$font-sans-serif: -apple-system, BlinkMacSystemFont, "Nunito Sans", "Segoe UI",
+  "Roboto", "Helvetica Neue", "Arial", sans-serif !default;
 
 /* Colors
    ========================================================================== */
@@ -19,5 +21,6 @@ $font-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Nunito Sans",
 $primary-color: #87f;
 $primary-color-dark: #65d;
 $default-blue: #345;
+$default-orange: #e80;
 $white: #fff;
 $black: #000;

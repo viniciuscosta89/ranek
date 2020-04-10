@@ -1,0 +1,29 @@
+.c-user-products {
+  margin-bottom: 5rem;
+
+  &__seller {
+    &-title {
+      color: $default-orange;
+    }
+  }
+
+  &__delivery {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+
+    @media screen and (min-width: 501px) {
+      grid-template-columns: minmax(100px, 200px) 1fr;
+      grid-gap: 20px;
+    }
+
+    .o-heading {
+      justify-self: start;
+      margin-bottom: 0;
+
+      @media screen and (min-width: 501px) {
+        justify-self: end;
+      }
+    }
+  }
+}

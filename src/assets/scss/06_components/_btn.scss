@@ -14,18 +14,72 @@
   display: inline-block;
   font-family: $font-sans-serif;
   font-size: 1rem;
-  padding: 10px 30px;
+  padding: 1rem 1.5rem;
   text-align: center;
   transition: $global-transition;
 
   &--primary {
     background-color: $primary-color;
-    box-shadow: 0 4px 8px rgba(30, 60, 90, 0.2);
+    box-shadow: $global-shadow;
     color: $white;
 
     &:hover {
       background-color: $primary-color-dark;
+      box-shadow: $global-shadow-hover;
       transform: scale(1.1);
+    }
+  }
+
+  &--secondary {
+    background-color: #f4f7fc;
+    color: $default-blue;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+
+  &--tertiary {
+    background-color: $default-orange;
+    color: $white;
+
+    &:hover {
+      background-color: darken($default-orange, 10%);
+      transform: scale(1.1);
+    }
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &--delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("~@/assets/img/remove.svg") center no-repeat;
+    width: 24px;
+    height: 24px;
+    text-indent: -140px;
+    overflow: hidden;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.25);
+    }
+  }
+
+  &[disabled] {
+    background-color: #bbc;
+    transform: scale(1);
+
+    &:hover {
+      background-color: #bbc;
+      box-shadow: $global-shadow;
+      cursor: default;
+      transform: scale(1);
     }
   }
 }

@@ -1,0 +1,37 @@
+.o-pagination {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / -1;
+
+  &__item {
+    &:not(:last-of-type) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__link {
+    border-radius: $global-radius;
+    display: inline-flex;
+    padding: 0.25rem 0.5rem;
+    transition: $global-transition;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+
+    &.router-link-exact-active {
+      background-color: $primary-color;
+      color: $white;
+      transform: scale(1.1);
+    }
+
+    &--start {
+      margin-right: 0.5rem;
+    }
+
+    &--end {
+      margin-left: 0.5rem;
+    }
+  }
+}

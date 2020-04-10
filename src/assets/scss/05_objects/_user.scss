@@ -1,0 +1,38 @@
+.user {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) 1fr;
+  max-width: 900px;
+  margin: 40px auto;
+  grid-gap: 30px;
+  padding: 20px;
+
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+}
+
+.side-nav {
+  &__link {
+    background-color: #f4f7fc;
+    border-radius: $global-radius;
+    display: block;
+    margin-bottom: 10px;
+    padding: 1rem 1.5rem;
+    transition: $global-transition;
+
+    &:hover {
+      background-color: $primary-color;
+      color: $white;
+    }
+
+    &.router-link-exact-active {
+      background-color: $primary-color;
+      color: $white;
+    }
+  }
+
+  .c-btn {
+    text-align: left;
+  }
+}
