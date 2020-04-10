@@ -9,6 +9,7 @@ import UserProducts from '../views/user/UserProducts.vue';
 import UserPurchases from '../views/user/UserPurchases.vue';
 import UserSales from '../views/user/UserSales.vue';
 import UserEdit from '../views/user/UserEdit.vue';
+import PageNotFound from '../views/PageNotFound.vue';
 
 Vue.use(VueRouter);
 
@@ -17,6 +18,10 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '*',
+    component: PageNotFound,
   },
   {
     path: '/produto/:id',

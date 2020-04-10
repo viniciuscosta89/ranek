@@ -35,9 +35,9 @@ export default {
   },
   methods: {
     async createUser(event) {
+      const button = event.currentTarget;
       this.errors = [];
       try {
-        const button = event.currentTarget;
         button.innerHTML = 'Criando...';
         button.setAttribute('disabled', true);
 
@@ -50,6 +50,8 @@ export default {
         button.innerHTML = 'Criar Usuário';
         button.removeAttribute('disabled');
       } catch (error) {
+        button.innerHTML = 'Criar Usuário';
+        button.removeAttribute('disabled');
         this.errors.push(error.response.data.message);
       }
     },
