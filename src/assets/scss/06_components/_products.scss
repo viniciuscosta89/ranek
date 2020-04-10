@@ -1,7 +1,7 @@
 .c-products {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
   margin: 1rem;
 
   @media screen and (min-width: 960px) {
