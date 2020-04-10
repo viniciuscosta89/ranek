@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const url = 'http://ranekapi.local/wp-json';
+const url = 'https://marketingparafood.com.br/ranek-api/wp-json';
 
 const axiosInstance = axios.create({
   baseURL: `${url}/api`,
