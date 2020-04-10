@@ -16,6 +16,7 @@
         <button class="c-btn c-btn--primary c-btn--block" @click.prevent="createUser">Criar Usuário</button>
       </UserForm>
     </transition>
+    <NotificationError :errors="errors" />
   </section>
 </template>
 
