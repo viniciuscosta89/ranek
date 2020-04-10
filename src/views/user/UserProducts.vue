@@ -44,7 +44,7 @@ export default {
             this.getUserProducts();
           })
           .catch((error) => {
-            console.log(error.response);
+            this.errors.push(error.response.data.message);
           });
       }
     },
