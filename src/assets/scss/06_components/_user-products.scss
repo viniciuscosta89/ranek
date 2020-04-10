@@ -12,7 +12,7 @@
     grid-template-columns: 1fr;
     grid-gap: 1rem;
 
-    @media screen and (min-width: 501px) {
+    @media screen and (min-width: 960px) {
       grid-template-columns: minmax(100px, 200px) 1fr;
       grid-gap: 20px;
     }
@@ -21,7 +21,7 @@
       justify-self: start;
       margin-bottom: 0;
 
-      @media screen and (min-width: 501px) {
+      @media screen and (min-width: 960px) {
         justify-self: end;
       }
     }
